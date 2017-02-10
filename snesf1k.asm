@@ -1,8 +1,8 @@
 //SNESF1k by el_seyf
 //Brainf*k Interpreter for Super NES/Famicom
-arch snes.cpu					//assemble to be a SNES executeable
+arch snes.cpu			//assemble to be a SNES executeable
 output	"snesf1k.sfc", create	//specifies output name,
-								//will overwrite existing file
+				//will overwrite existing file
 //*******************************************************************//
 print "--------------------------------------------------\n"
 //*******************************************************************//
@@ -68,19 +68,19 @@ print "Memory Usage:\n"
 //*******************************************************************//
 //VARIABLES:
 org($0000)
-x_counter:;				dw $0000
+x_counter:;		dw $0000
 char_out_buffer_addr:;	dl $000000
-_pad:;					dw $0000
-_pad_last:;				dw $0000
-bf_execute:;			db $00
-pgm_size:;				dl $000000
-cursor_y:;				dw $0000
+_pad:;			dw $0000
+_pad_last:;		dw $0000
+bf_execute:;		db $00
+pgm_size:;		dl $000000
+cursor_y:;		dw $0000
 snesf1k_data_pointer:;	dl $000000
 snesf1k_pgm_pointer:;	dl $000000
 snesf1k_pgm_offset:;	dw $0000
 
-zero_word:;				dw $0000
-space_word:;			dw $0000
+zero_word:;		dw $0000
+space_word:;		dw $0000
 //*******************************************************************//
 //CODE:
 org($8000)
